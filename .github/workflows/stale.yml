@@ -1,0 +1,19 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: "30 1 * * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: "Hey, I just want to let you guys know that this issue is getting a bit old, and it looks like it isn't getting fixed, please try to be more active, or I will have to close this. :/"
+        stale-pr-message: 'It looks like nobody is really talking about this PR, so I might have to close it. :/'
+        stale-issue-label: 'issue-stale'
+        stale-pr-label: 'pr-stale'
