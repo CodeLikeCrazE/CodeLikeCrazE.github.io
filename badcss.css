@@ -1,18 +1,17 @@
 a {
-  background: red;
+  background: white;
   font-size: 12px;
   padding: 0.5em 1em;
   text-decoration: none;
-  box-shadow: 0px 5px #a80000;
-  color: white;
+  box-shadow: 0px 0px 5px grey;
+  color: black;
   padding: 5px 10px;
   font-weight: bold;
   background: rgba(0, 0, 0, 0);
   border-radius: 5px;
-  border: 3px solid white;
   transition: all 0.5s ease;
 }
 a:hover {
   background: white;
-  color: red;
+  color: black;
 }
